@@ -134,14 +134,17 @@ void render_layer(uint8_t layer) {
             render_layer_helper_fun(1, PSTR("1:HOME"), 12, 6);
             break;
         case 1:
-            render_layer_helper_fun(1, PSTR("2:CODE"), 12, 6);
+            render_layer_helper_fun(1, PSTR("2:SYMB"), 12, 6);
             break;
         case 2:
-            render_layer_helper_fun(1, PSTR("3:OFFICE"), 0, 8);
+            render_layer_helper_fun(1, PSTR("3:NUMP"), 12, 6);
             break;
         case 3:
+            render_layer_helper_fun(1, PSTR("4:FKEY"), 12, 6);
+            break;
+        case 4:
+            render_layer_helper_fun(1, PSTR("5:LEDC"), 12, 6);
         default:
-            render_layer_helper_fun(1, PSTR("4:OTHERS"), 0, 8);
             break;
     }
 }
